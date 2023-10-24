@@ -36,7 +36,7 @@ write to us at
               What is Virtuex, and how does it work?
             </AccordionTrigger>
             <AccordionContent>
-              Virtuex is a platform that helps businesses create and use virtual spaces for work, meetings, and showcasing products. It's all about making collaboration easier and using advanced technology.
+              Virtuex is a platform that helps businesses create and use virtual spaces for work, meetings, and showcasing products. It&apos;s all about making collaboration easier and using advanced technology.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
@@ -58,7 +58,7 @@ write to us at
               Is Virtuex secure?
             </AccordionTrigger>
             <AccordionContent>
-              Virtuex's security depends on access control, data encryption, privacy practices, updates, monitoring, and user training. It's crucial to follow best practices for data protection and system security.
+              Virtuex&apos;s security depends on access control, data encryption, privacy practices, updates, monitoring, and user training. It&apos;s crucial to follow best practices for data protection and system security.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem

@@ -12,7 +12,7 @@ const About = () => {
         <h3 className="text-blue-400 font-extrabold text-xs uppercase">About Virtuex</h3>
         <h1 className="text-[#323232] font-bold text-2xl mt-4">Pioneering Excellence in <br /> Virtual Solutions</h1>
         <p className="text-[#323232] font-normal text-base mt-4">
-          At Virtuex, we're on a mission to revolutionize the digital landscape.
+          At Virtuex, we&apos;re on a mission to revolutionize the digital landscape.
           With a relentless focus on innovation, we deliver cutting-edge virtual
           solutions that empower businesses to thrive. Our commitment to
           excellence is the driving force behind everything we do.
