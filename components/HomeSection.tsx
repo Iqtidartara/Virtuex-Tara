@@ -54,7 +54,7 @@ const HomeSection = () => {
             </Button>
             <Button
               variant="ghost"
-              className="lg:ml-2 border-2 border-[#4255BD] mt-2 lg:mt-0 px-6 py-6 font-bold gap-2 text-md hover:bg-black/10"
+              className="lg:ml-2 border-2 border-[#4255BD]  lg:mt-0 px-6 py-5 font-bold gap-1  hover:bg-black/10"
             >
               Watch Video
               <Image
@@ -67,15 +67,15 @@ const HomeSection = () => {
           </div>
           <Image src="/users.png" alt="user" width={300} height={100} className="m-4" />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col items-center">
+        <div className="w-full lg:w-1/2 flex flex-col items-center ">
           {/* Right-side content goes here */}
-          <div className="w-full">
+          
             <Image src='/Frame 7.png' 
             alt="sd"
             width={800}
             height={800}
-            className="w-full h-full"/>
-          </div>
+            className="w-full "/>
+       
         </div>
       </main>
     </div>
