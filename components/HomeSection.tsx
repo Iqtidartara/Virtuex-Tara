@@ -48,13 +48,13 @@ const HomeSection = () => {
             Revolutionize your operations, enhance productivity, and embrace the
             future of technology. Experience excellence like never before.
           </p>
-          <div className="flex items-center justify-between">
-            <Button className="mr-2 font-bold tracking-widest bg-[#4255BD] rounded-xl text-white px-6 py-6 text-sm">
+          <div className="flex  items-center justify-center">
+            <Button className="mr-2 font-semibold tracking-widest bg-[#4255BD] rounded-[10px] text-white px-6 py-6 text-sm">
               Get Started
             </Button>
             <Button
               variant="ghost"
-              className="lg:ml-2 border-2 border-[#4255BD]  lg:mt-0 px-6 py-5 font-bold gap-1  hover:bg-black/10"
+              className="lg:ml-2 border border-[#4255BD] rounded-[10px] lg:mt-0 px-4 md:py-6 py-5 font-semibold gap-1  hover:bg-black/10"
             >
               Watch Video
               <Image
