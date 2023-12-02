@@ -14,7 +14,7 @@ const HomeSection = () => {
             <h1
               style={{
                 color: "var(--neutral-black, #000)",
-                fonz
+                fontSize: "3rem",
                 fontStyle: "normal",
                 fontWeight: "700",
                 lineHeight: "normal",
