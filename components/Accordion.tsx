@@ -8,31 +8,31 @@ import Link from "next/link";
 
 export default function AccordionDemo() {
   return (
-    <div className="max-w-[72rem] mx-auto mt-10 mb-10 px-4 sm:px-6 lg:px-8 flex">
+    <div className="max-w-[72rem] mx-auto mt-10 mb-10 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row">
       {/* Left side (Heading) */}
-      <div className="w-1/2 pr-4 ">
-        <h4 className="text-blue-500 font-nums-fractions font-variant-normal font-variant-ordinal font-variant-styleset font-styleset-3 font-variant-styleset-3 font-variant-styleset-6 font-semibold leading-[1.85714] text-xs uppercase tracking-wider">Faq&apos;s</h4>
-        <h1 className="text-[#2A3256]  font-bold text-3xl sm:text-4xl lg:text-5xl mt-10 ">
-          Frequently Asked <span className="text-[#4255BD] leading-[2]
+      <div className="md:w-1/2  w-full ">
+        <h4 className="text-blue-500 font-nums-fractions font-variant-normal font-variant-ordinal font-variant-styleset font-styleset-3 font-variant-styleset-3 font-variant-styleset-6 font-semibold md:leading-[1.85714] leading-[1.4] text-xs uppercase tracking-wider md:text-start text-center">Faq&apos;s</h4>
+        <h1 className="text-[#2A3256]  font-bold text-3xl sm:text-4xl lg:text-5xl md:mt-10 mt-4 md:text-start text-center">
+          Frequently Asked <span className="text-[#4255BD] md:leading-[2] leading-[1.4]
           ">Questions</span> 
         </h1>
 
 
 
-        <p className="text-[#586174] font-nums-fractions font-variant-normal font-variant-ordinal font-variant-styleset font-styleset-3 font-variant-styleset-3 font-variant-styleset-6 text-sm font-normal leading-[2.85714] tracking-tighter mt-44">
+        <p className="text-[#586174] font-nums-fractions font-variant-normal font-variant-ordinal font-variant-styleset font-styleset-3 font-variant-styleset-3 font-variant-styleset-6 text-sm font-normal md:leading-[2.85714] leading-[1.3]  md:mt-44 mt-6 text-center md:text-start">
         Couldn&apos;t find what you were looking for?
 write to us at
         </p>
-        <Link href='/' className="text-blue-500 font-nums-stacked-fractions font-feature-cv09 font-feature-cv04 font-feature-ss01 font-feature-cv03 font-feature-ss03 font-feature-cv06 font-inter text-base font-normal  leading-7 tracking-tight underline">example@gmail.com</Link>
+        <Link href='/' className="text-blue-500 font-nums-stacked-fractions font-feature-cv09 font-feature-cv04 font-feature-ss01 font-feature-cv03 font-feature-ss03 font-feature-cv06 font-inter text-base font-normal  leading-7 tracking-tight underline hidden md:block">example@gmail.com</Link>
       </div>
       {/* Right side (Accordion) */}
-      <div className="w-1/2 ">
-        <Accordion type="single" collapsible className="w-full mt-10 ml-0 sm:ml-12">
+      <div className="md:w-1/2 w-full ">
+        <Accordion type="single" collapsible className="w-full md:mt-10 mt-4 ml-0 sm:ml-12">
           <AccordionItem
             value="item-1"
             className="shadow-lg rounded-lg p-4 sm:p-6 md:p-8"
           >
-            <AccordionTrigger className="font-bold text-lg">
+            <AccordionTrigger className="font-bold md:text-lg text-[1rem] text-start">
               What is Virtuex, and how does it work?
             </AccordionTrigger>
             <AccordionContent>
@@ -43,7 +43,7 @@ write to us at
             value="item-2"
             className="shadow-lg rounded-lg p-4 sm:p-6 md:p-8"
           >
-            <AccordionTrigger className="font-bold text-lg">
+            <AccordionTrigger className="font-bold md:text-lg text-[1rem] text-start">
               How can Virtuex enhance my productivity?
             </AccordionTrigger>
             <AccordionContent>
@@ -54,7 +54,7 @@ write to us at
             value="item-3"
             className="shadow-lg rounded-lg p-4 sm:p-6 md:p-8"
           >
-            <AccordionTrigger className="font-bold text-lg">
+            <AccordionTrigger className="font-bold md:text-lg text-[1rem] text-start">
               Is Virtuex secure?
             </AccordionTrigger>
             <AccordionContent>
@@ -65,7 +65,7 @@ write to us at
             value="item-4"
             className="shadow-lg rounded-lg p-4 sm:p-6 md:p-8"
           >
-            <AccordionTrigger className="font-bold text-lg">
+            <AccordionTrigger className="font-bold md:text-lg text-[1rem] text-start">
               How can I get started with Virtuex for my business?
             </AccordionTrigger>
             <AccordionContent>
