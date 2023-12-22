@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <div className="w-full mx-auto bg-white border-2 shadow-xl relative z-50">
-      <Popover className="container mx-auto flex items-center  px-6 py-2 h-20 w-full md:max-w-7xl">
+      <Popover className="container mx-auto flex items-center  px-4 py-4  md:max-w-[80rem]">
         <Image
           src="/logo.png"
           width={147}

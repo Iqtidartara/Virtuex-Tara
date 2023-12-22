@@ -4,21 +4,15 @@ import { Button } from "@/components/ui/button";
 
 const HomeSection = () => {
   return (
-    <div className="w-full pb-10">
-      <main className="mx-auto flex flex-col lg:flex-row lg:h-[80vh] px-6 py-12 max-w-7xl">
-        <div className="w-full lg:w-3/5 flex flex-col items-start gap-8 text-center md:text-start">
-          <h3 className="text-blue-400 font-extrabold text-xs leading-normal tracking-tight uppercase mt-8 mx-auto md:mx-0">
+    <div className="w-full ">
+      <main className="mx-auto flex flex-col md:flex-row px-4 py-12 max-w-[80rem]">
+        <div className="w-full md:w-1/2 flex flex-col items-start justify-center gap-8 text-center md:text-start">
+          <h3 className="text-blue-400 font-[700] text-xs md:leading-normal leading-[1.4]  uppercase mt-8 mx-auto md:mx-0">
             #1 SaaS website
           </h3>
-          <div className="pb-2 w-full">
+          <div className="w-full">
             <h1
-              style={{
-                color: "var(--neutral-black, #000)",
-                fontSize: "3rem",
-                fontStyle: "normal",
-                fontWeight: "700",
-                lineHeight: "normal",
-              }}
+              className="md:text-[3rem] text-[2rem] font-[700] text-[#000] md:leading-normal leading-[1.3] "
             >
               Elevate Your Business <br className="hidden md:block" />
               with{" "}
@@ -43,13 +37,13 @@ const HomeSection = () => {
             </h1>
           </div>
 
-          <p className="text-gray-800 text-base font-normal leading-6">
+          <p className="text-gray-800 text-[16px] font-[400] md:leading-[206%] leading-[1.4]">
             Virtuex empowers your business with cutting-edge virtual solutions.
             Revolutionize your operations, enhance productivity, and embrace the
             future of technology. Experience excellence like never before.
           </p>
           <div className="flex  items-center justify-center">
-            <Button className="mr-2 font-semibold tracking-widest bg-[#4255BD] rounded-[10px] text-white px-6 py-6 text-sm">
+            <Button className="mr-2 font-semibold tracking-widest border bg-[#4255BD] rounded-[10px] text-white px-6 py-6 text-sm">
               Get Started
             </Button>
             <Button
@@ -67,14 +61,14 @@ const HomeSection = () => {
           </div>
           <Image src="/users.png" alt="user" width={300} height={100} className="m-4" />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col items-center ">
+        <div className="w-full md:w-1/2 flex flex-col items-center ">
           {/* Right-side content goes here */}
           
             <Image src='/Frame 7.png' 
             alt="sd"
-            width={800}
-            height={800}
-            className="w-full "/>
+            width={600}
+            height={600}
+            className=" "/>
        
         </div>
       </main>

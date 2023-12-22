@@ -1,6 +1,5 @@
 import About from '@/components/About'
 import AccordionDemo from '@/components/Accordion'
-import Carousel from '@/components/Carousel'
 import Footer from '@/components/Footer'
 import HomeSection from '@/components/HomeSection'
 import Support from '@/components/Support'
@@ -14,7 +13,7 @@ export default function Home() {
     <Support/>
     <About />
     <VirtualSolutions/>
-    <Carousel />
+    
     <AccordionDemo/>
     <Footer />
    </main>
