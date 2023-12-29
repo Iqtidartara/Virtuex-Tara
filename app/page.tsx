@@ -6,6 +6,7 @@ import Support from '@/components/Support'
 import VirtualSolutions from '@/components/VirtualSolutions'
 
 
+
 export default function Home() {
   return (
     <main className='w-full mx-auto'>
@@ -13,7 +14,7 @@ export default function Home() {
     <Support/>
     <About />
     <VirtualSolutions/>
-    
+  
     <AccordionDemo/>
     <Footer />
    </main>
