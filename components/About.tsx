@@ -1,5 +1,5 @@
-'use client'
-import { useEffect, useRef } from "react";
+ 'use client'
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { motion, useAnimation } from "framer-motion";
@@ -11,12 +11,13 @@ interface AboutProps {
 const About: React.FC<AboutProps> = () => {
   const controls = useAnimation();
   const ref = useRef<HTMLDivElement>(null);
+  const [animationStarted, setAnimationStarted] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const element = ref.current;
 
-      if (element) {
+      if (element && !animationStarted) {
         const { top } = element.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
@@ -27,6 +28,7 @@ const About: React.FC<AboutProps> = () => {
             borderRadius: ["20%", "20%", "50%", "50%", "20%"],
             opacity: 1,
           });
+          setAnimationStarted(true); // Set the flag to true once the animation starts
         }
       }
     };
@@ -36,7 +38,7 @@ const About: React.FC<AboutProps> = () => {
 
     // Remove the event listener when the component unmounts
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [controls]);
+  }, [controls, animationStarted]);
 
   return (
     <div
