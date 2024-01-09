@@ -1,13 +1,55 @@
+'use client'
+import { useEffect, useRef } from "react";
 import Image from "next/image";
-import React from "react";
 import { Button } from "./ui/button";
+import { motion, useAnimation } from "framer-motion";
 
-const About = () => {
+interface AboutProps {
+  // Add any props here if needed
+}
+
+const About: React.FC<AboutProps> = () => {
+  const controls = useAnimation();
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = ref.current;
+
+      if (element) {
+        const { top } = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (top < windowHeight * 0.8) {
+          controls.start({
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 0, 270, 270, 0],
+            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+            opacity: 1,
+          });
+        }
+      }
+    };
+
+    // Add the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [controls]);
+
   return (
-    <main className="w-full mx-auto flex flex-col md:flex-row items-center justify-between px-4 h-[80vh] max-w-7xl">
-      <div className="w-full md:w-1/2 flex justify-center">
+    <div
+      ref={ref}
+      className="w-full mx-auto flex flex-col md:flex-row items-center justify-between px-4 h-[80vh] max-w-7xl"
+    >
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={controls}
+        className="w-full md:w-1/2 flex justify-center"
+      >
         <Image src="/Group 24.png" alt="about" width={300} height={300} />
-      </div>
+      </motion.div>
       <div className="w-full md:w-1/2 text-center md:text-left md:pl-8 mt-4 md:mt-0  gap-[1rem]">
         <h3 className="text-blue-400 font-extrabold text-xs uppercase">About Virtuex</h3>
         <h1 className="text-[#323232] font-bold text-2xl mt-4">Pioneering Excellence in <br /> Virtual Solutions</h1>
@@ -21,7 +63,7 @@ const About = () => {
           Get Started
         </Button>
       </div>
-    </main>
+    </div>
   );
 };
 

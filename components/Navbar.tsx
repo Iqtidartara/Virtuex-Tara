@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Popover } from "@headlessui/react";
 import { Menu, X } from "lucide-react";
+import { motion } from "framer-motion"
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,10 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full mx-auto bg-white border-2 shadow-xl relative z-50">
+    <motion.div
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }} className="w-full mx-auto bg-white border-2 shadow-xl relative z-50">
       <Popover className="container mx-auto flex items-center  px-4 py-4  md:max-w-[80rem]">
         <Image
           src="/logo.png"
@@ -100,7 +104,7 @@ const Header = () => {
           </Button>
         </div>
       </Popover>
-    </div>
+    </motion.div>
   );
 };
 
