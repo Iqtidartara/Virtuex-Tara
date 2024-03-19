@@ -21,7 +21,7 @@ const About: React.FC<AboutProps> = () => {
         const { top } = element.getBoundingClientRect();
         const windowHeight = window.innerHeight;
 
-        if (top < windowHeight * 0.8) {
+        if (top < windowHeight * 5) {
           controls.start({
             scale: [1, 2, 2, 1, 1],
             rotate: [0, 0, 270, 270, 0],
@@ -43,7 +43,7 @@ const About: React.FC<AboutProps> = () => {
   return (
     <div
       ref={ref}
-      className="w-full mx-auto flex flex-col md:flex-row items-center justify-between px-4 h-[80vh] max-w-7xl"
+      className="w-full mx-auto flex flex-col md:flex-row items-center justify-between px-4 h-[80vh] max-w-7xl bg-slate-150"
     >
       <motion.div
         initial={{ opacity: 0 }}
